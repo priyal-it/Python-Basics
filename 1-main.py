@@ -1,0 +1,6 @@
+print("Hello World!")
+print('Hello World!')
+print(10)
+print("Hello World", "Hello India")
+print('10')
+print("10")
