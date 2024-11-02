@@ -64,7 +64,7 @@ else:
 num=int(input("Enter a number: "))
 absStrNum=str(abs(num))
 rev=''
-for c in absstrNum:
+for c in absStrNum:
     rev=c+rev
 
 if(num>=0):
