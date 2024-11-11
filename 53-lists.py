@@ -1,4 +1,4 @@
-#lec 3.4 More on Lists
+#lec 4.4 More on Lists
 
 #operators
 
