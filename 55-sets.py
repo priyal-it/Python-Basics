@@ -1,4 +1,4 @@
-#lec 3.5 More on sets
+#lec 4.5 More on sets
 
 st={1,2,4,3,5,1,2,3,4} #indexing is not possible in sets
 print(st)
