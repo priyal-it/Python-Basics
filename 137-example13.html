@@ -1,0 +1,149 @@
+<!--Practical 137: Example 13-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Example 13
+        </title>
+        <style>
+            body{
+                font-family: sans-serif;
+            }
+            table{
+                border-collapse: collapse;
+            }
+            table tr:first-child th{
+                border: 0;
+                box-shadow: -1px 2px 3px rgb(8, 58, 114)
+            }
+            table tr:first-child th:first-child{
+                border-top-left-radius: 5px;
+            }
+            table tr:first-child th:last-child{
+                border-top-right-radius: 5px;
+            }
+            th{
+                background-color: rgb(114, 159, 210);
+                color: white;
+                text-shadow: 1px -2px 3px grey;
+            }
+            td, th{
+                border: 1px solid gray;
+                padding: 5px;
+            }
+            tr.odd{
+                background-color: rgb(226, 227, 255);
+            }
+            ul{
+                list-style-type: none;
+            }
+            li{
+                background-image: url("images/13bullet.png");
+                background-size: 15px;
+                background-repeat: no-repeat;
+                padding-left: 20px;
+            }
+            fieldset{
+                margin-top: 15px;
+                width: 350px;
+            }
+            legend{
+                font-style: italic;
+            }
+            fieldset div{
+                padding: 10px;
+            }
+            div.textinput label, div.textinput input{
+                margin: 5px auto 5px 0;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Poetry Workshops</h1>
+        <p>We will be conducting a number of poetry workshops and symposiums throughout the year.</p>
+        <p>Please note that the following events are free to members:</p>
+        <div class="list">
+            <ul>
+                <li>A Poetic Perspective</li>
+                <li>Wait Whitman at War</li>
+                <li>Found Poems and Outsider Poetry</li>
+            </ul>
+        </div>
+        <table>
+            <tr>
+                <th></th>
+                <th>New York</th>
+                <th>Chicago</th>
+                <th>San Fransisco</th>
+            </tr>
+            <tr class="odd">
+                <td class="event" rowspan="2">A Poetic Perspective</td>
+                <td>Sat, 4 Feb 2012</td>
+                <td>Sat, 3 Mar 2012</td>
+                <td>Sat, 17 Mar 2012</td>
+            </tr>
+            <tr class="odd">
+                <td>11am - 2pm</td>
+                <td>11am - 2pm</td>
+                <td>11am - 2pm</td>
+            </tr>
+            <tr>
+                <td class="event" rowspan="2">Whit Whitman at War</td>
+                <td>Sat, 7 Apr 2012</td>
+                <td>Sat, 5 May 2012</td>
+                <td>Sat, 19 May 2012</td>
+            </tr>
+            <tr>
+                <td>11am - 1pm</td>
+                <td>11am - 1pm</td>
+                <td>11am - 1pm</td>
+            </tr>
+            <tr class="odd">
+                <td class="event" rowspan="2">Found Poems & Outsider Poetry</td>
+                <td>Sat, 9 Jun 2012</td>
+                <td>Sat, 7 Jul 2012</td>
+                <td>Sat, 21 Jul 2012</td>
+            </tr>
+            <tr class="odd">
+                <td>11am - 2pm</td>
+                <td>11am - 2pm</td>
+                <td>11am - 2pm</td>
+            </tr>
+            <tr>
+                <td class="event" rowspan="2">Natural death: An Exploration</td>
+                <td>Sat, 4 Aug 2012</td>
+                <td>Sat, 8 Sep 2012</td>
+                <td>Sat, 15 Sep 2012</td>
+            </tr>
+            <tr>
+                <td>11am - 4pm</td>
+                <td>11am - 4pm</td>
+                <td>11am - 4pm</td>
+            </tr>
+        </table>
+        <div class="register">
+            <fieldset>
+                <legend>Register your interest</legend>
+                <div class="textinput">
+                    <label for="name">Your name:</label>
+                    <input id="name" type="text"><br/>
+                    <label for="email">Your email:</label>
+                    <input id="email" type="email">
+                </div>
+                <div>
+                <label for="center">Your closest center:</label>
+                    <select id="center">
+                        <option>New York</option>
+                        <option>Chicago</option>
+                        <option>San Fransisco</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="membership">Are you a member?</label>
+                    <input type="radio" value="Yes" name="membership" id="member"><label for="member">Yes</label>
+                    <input type="radio" value="No" name="membership" id="non-member"><label for="non-member">No</label>
+                </div>
+            </fieldset>
+        </div>
+    </body>
+</html>
