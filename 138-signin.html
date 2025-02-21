@@ -1,0 +1,135 @@
+<!--Practical 138: Sign in page-->
+<html>
+    <head>
+        <title>Sign in page</title>
+        <style>
+            body{
+                margin-top: 60px;
+                font-family: sans-serif;
+                justify-content: center;
+                display: flex;
+                height: 450px;
+                background: linear-gradient(to top right, rgb(0, 191, 255), rgb(125, 78, 236), rgb(191, 0, 255));
+            }
+            .main{
+                width: 250px;
+                box-shadow: 0 0 10px gray;
+                border-radius: 10px;
+                padding: 20px;
+                background-color: white;
+            }
+            .heading{
+                margin: auto;
+                text-align: center;
+                font-size: 15px;
+            }
+            div.username, div.password{
+                margin: 20px;
+            }
+            input{
+                margin-top: 10px;
+                display: flex;
+                width: 100%;
+            }
+            input[type="text"], input[type="password"]{
+                outline: none;
+                border: none;
+                border-bottom: 1px solid gray;
+            }
+            .forgotpass{
+                text-align: right;
+                font-size: small;
+            }
+            img{
+                height: 20px;
+            }
+            table{
+                width: 100%;
+            }
+            td{
+                padding: 5px;
+            }
+            .login{
+                display: flex;
+                justify-content: center;
+            }
+            .loginbutton{
+                text-align: center;
+                padding: 10px 100px;
+                font-size: 15px;
+                font-weight: bold;
+                border-radius: 20px;
+                border: none;
+                color: white;
+                background: linear-gradient(to right, rgb(0, 191, 255), rgb(78, 78, 236), rgb(144, 0, 255), rgb(204, 0, 255));
+            }
+            .loginbutton:focus{
+                outline-color: rgb(144, 0, 255);
+            }
+            .signup{
+                margin: 20px;
+                text-align: center;
+                font-size: smaller;
+            }
+            img[class="logos"]{
+                height: 27px;
+                width: auto;
+                margin: 15px 5px;
+                border-radius: 100%;
+            }
+            img:hover{
+                cursor: pointer;
+                box-shadow: 0 0 15px rgb(51, 210, 238);
+            }
+        </style>
+    </head>
+    <body>
+        <div class="main">
+            <div class="heading">
+                <h1>Login</h1>
+            </div>
+            <div class="main1">
+                <div class="username">
+                    <label for="usernameinput">Username</label><br/>
+                    <div class="usernametable">
+                        <table>
+                            <tr>
+                                <td><img src="Logos/profile.png" alt="profile"></td>
+                                <td><input type="text" placeholder="Enter your username"></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div class="password">
+                    <label for="passwordinput">Password</label>
+                    <div class="passwordtable">
+                        <table>
+                            <tr>
+                                <td><img src="Logos/password.png" alt="lock image"></td>
+                                <td><input type="password" placeholder="Enter password"></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="forgotpass">
+                        <a href="forgotpass.html" alt="Forgot Password">Forgot Password?</a>
+                    </div>
+                </div>
+                <div class="signinoptions">
+                    <div class="login">
+                        <button class="loginbutton">Login</button>
+                    </div>
+                    <div class="signup">
+                        <span class="text">
+                            or sign up using
+                        </span>
+                        <div class="logos">
+                            <a href="https://www.facebook.com"><img src="Logos/facebook.png" alt="facebook" class="logos"></a>
+                            <a href="https://www.x.com"><img src="Logos/twitter.png" alt="twitter" class="logos"></a>
+                            <a href="https://www.google.com"><img src="Logos/google.png" alt="google" class="logos"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
